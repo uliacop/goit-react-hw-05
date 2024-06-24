@@ -1,0 +1,19 @@
+.load_more_btn {
+  display: block;
+  border: none;
+  border-radius: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgb(253, 253, 253);
+  border: 1px solid rgb(65, 23, 65);
+  margin: 30px auto;
+  padding: 10px 30px;
+  background-color: rgb(207, 128, 207);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.load_more_btn:hover,
+.load_more_btn:focus {
+  color: rgb(102, 91, 102);
+  transform: scale(1.04);
+}

@@ -1,0 +1,11 @@
+.home_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+}
+.home_title {
+  color: rgb(73, 51, 73);
+  margin-bottom: 20px;
+}
