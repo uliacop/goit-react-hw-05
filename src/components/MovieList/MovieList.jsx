@@ -8,6 +8,7 @@ const MovieList = ({ trendingMovies }) => {
     <ul className={css.movies_list}>
       {trendingMovies.map((movie, index) => {
         const movieId = movie.id;
+        const isPlaceholder = !movie.poster_path;
         return (
           <li className={css.movie_item} key={`${movieId}-${index}`}>
             <img
@@ -16,6 +17,7 @@ const MovieList = ({ trendingMovies }) => {
                   ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
                   : `https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg`
               }
+              className={isPlaceholder ? css.placeholder_image : ""}
               loading="lazy"
               alt="Movie poster"
             />

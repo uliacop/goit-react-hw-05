@@ -49,11 +49,14 @@ const MovieDetailsPage = () => {
         <Link className={css.go_back} to={backLink.current}>
           Back
         </Link>
-        <img
-          src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
-          width="360"
-          alt={`${movie.title}`}
-        />
+
+        {
+          <img
+            src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
+            className={css.movie_image}
+            alt={`${movie.title}`}
+          />
+        }
         <h2 className={css.movie_title}>{movie.title}</h2>
         <p>User score: {vote}%</p>
         <p className={css.movie_overview}>Overview {movie.overview}</p>
